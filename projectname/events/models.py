@@ -19,6 +19,9 @@ class Person(models.Model):
 
     def __str__(self):
         return self.full_name
+    
+    class Meta:
+        verbose_name_plural = 'People'
       
 class Attendance(models.Model):
     person = models.ForeignKey(Person)
