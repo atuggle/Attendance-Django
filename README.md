@@ -93,7 +93,7 @@
 			§ Attendance
 				□ Person
 				□ Event
-		○ See: https://github.com/atuggle/Events-Project-Codeanywhere/blob/master/projectname/events/models.py
+		○ See: https://github.com/atuggle/Codeanywhere-Django-Event-Web-App/blob/release-3-projectapp-models/projectname/events/models.py
 	11. Slide:
 		○ Discuss ORM
 			§ %> python manage.py makemigrations
@@ -118,12 +118,12 @@
 		○ Create Templates and connect to view:
 			§ Discuss why duplication of app name in template folder
 			§ events/templates/events/index.html
-				□ https://github.com/atuggle/Events-Project-Codeanywhere/blob/master/projectname/events/templates/events/index.html
+				□ https://github.com/atuggle/Codeanywhere-Django-Event-Web-App/blob/release-4-projectapp-templates/projectname/events/templates/events/index.html
 			§ events/templates/base.html
-				□ https://github.com/atuggle/Events-Project-Codeanywhere/blob/master/projectname/events/templates/base.html
+				□ https://github.com/atuggle/Codeanywhere-Django-Event-Web-App/blob/release-4-projectapp-templates/projectname/events/templates/base.html
 			§ Template inheritance via {% block name %} [% endblock %}
 			§ Events/static/events/starter-template.css
-				□ https://github.com/atuggle/Events-Project-Codeanywhere/blob/master/projectname/events/static/events/starter-template.css
+				□ https://github.com/atuggle/Codeanywhere-Django-Event-Web-App/blob/release-4-projectapp-templates/projectname/events/static/events/starter-template.css
 	14. Slide:
 		○ Connect view.py to templates:
 			§ Add linked code to view.py {Just the function "def index"
@@ -133,14 +133,14 @@
 		○ Discuss Forms:
 		○ Create "RegisterForm(forms.Form)" 
 			§ Create events/forms.py file
-				□ https://github.com/atuggle/Events-Project-Codeanywhere/blob/master/projectname/events/forms.py
+				□ https://github.com/atuggle/Codeanywhere-Django-Event-Web-App/blob/release-5-projectapp-forms/projectname/events/forms.py
 	16. Slide:
 		○ Create form and detail.html:
 		○ Events/templates/events/details.html
-			□ https://github.com/atuggle/Events-Project-Codeanywhere/blob/master/projectname/events/templates/events/detail.html
+			□ https://github.com/atuggle/Codeanywhere-Django-Event-Web-App/blob/release-5-projectapp-forms/projectname/events/templates/events/detail.html
 		○ Uncomment line un urls.py so details route will work
 		○ Update views.py to look like this:
-			□ https://github.com/atuggle/Events-Project-Codeanywhere/blob/master/projectname/events/views.py
+			□ https://github.com/atuggle/Codeanywhere-Django-Event-Web-App/blob/release-5-projectapp-forms/projectname/events/views.py
 		○ Use the form to create one or more attendance records in db
 		○ SEE branch: release-5-projectapp-forms
 	17. Slide:
@@ -153,7 +153,7 @@
 				□ Notice there is already "Groups" & "Users"
 		○ Register models in admin.py that you want to show In the admin:
 			□ Edit events/admin.py:
-				□ https://github.com/atuggle/Events-Project-Codeanywhere/blob/master/projectname/events/admin.py
+				□ https://github.com/atuggle/Codeanywhere-Django-Event-Web-App/blob/release-6-projectapp-admin/projectname/events/admin.py
 			□ Refresh admin 
 			□ Discuss Admin consoles
 		○ SEE branch: release-6-projectapp-templates
@@ -163,4 +163,4 @@
 		○ Resources:
 			□ https://www.djangoproject.com/
 				□ View both the tutorial & overview
-Book: "Two Scoops of django" by Daniel Greenfeld and Audrey Roy
+			□ Book: "Two Scoops of django" by Daniel Greenfeld and Audrey Roy
