@@ -35,7 +35,6 @@ class Relationships(models.Model):
     children = models.ManyToManyField(Person, related_name='is_child')
     
     def __str__(self):
-#         guardian_list = [val for val in self.guardians.all() if val in WishList.attribute_answers.all()]
         return "{1} is/are the guardian(s) of {0}".format(', '.join(str(x) for x in self.children.all()), ', '.join(str(x) for x in self.guardians.all()))
       
 class Attendance(models.Model):
