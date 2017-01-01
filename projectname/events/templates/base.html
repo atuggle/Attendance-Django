@@ -20,6 +20,20 @@
           <li class="active"><a href="#">Register for an Event</a></li>
           <li><a href="/events/">All Events</a></li>
         </ul>
+        <ul class="nav navbar-nav pull-right">
+          {% if user.is_authenticated %}
+              <li>    
+                  <a>Hi {{ user.username }}!</a>
+              </li>
+              <li class="active">    
+                  <a href="{% url 'logout' %}">Logout</a>
+              </li>
+          {% else %}
+          <li class="active">    
+            <a href="{% url 'login' %}">Login</a>
+          </li>
+          {% endif %}
+        </ul>
       </div>
     </nav>
 

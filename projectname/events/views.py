@@ -30,7 +30,8 @@ def get_person_id(form):
   p = Person.objects.filter(email=f_email).first()
 
   if p is None:
-    f_full_name = form.cleaned_data['attendee_name']
-    p = Person(full_name=f_full_name, email=f_email)
+    f_first_name = form.cleaned_data['attendee_first_name']
+    f_last_name = form.cleaned_data['attendee_last_name']
+    p = Person(first_name=f_full_name, last_name=f_last_name, email=f_email)
     p.save()
   return p.id
